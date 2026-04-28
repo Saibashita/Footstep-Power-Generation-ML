@@ -61,6 +61,39 @@ Collected using Arduino and stored as:
 * jumping.txt
 * standing.txt
 
+
+
+🔌 Communication Protocols Used
+
+This project uses two different communication protocols for efficient data transfer and display:
+
+1️⃣ UART (Serial Communication)
+Used for communication between Arduino and Computer
+Transfers real-time sensor data from piezo sensors to the Python-based machine learning model
+Implemented using Arduino’s built-in serial interface
+Example: Serial.println(sensorValue);
+
+2️⃣ I²C (Inter-Integrated Circuit)
+Used for interfacing the 16x2 LCD display with Arduino
+Requires only two communication lines:
+SDA (Data line)
+SCL (Clock line)
+Example:
+Arduino acts as Master
+LCD acts as Slave (address: 0x27)
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+🔄 Overall Communication Flow
+Piezo Sensors → Arduino (Analog Input)
+        ↓
+   UART Communication
+        ↓
+   Computer (Python ML Model)
+
+AND
+
+Arduino → I²C → LCD Display
+
 ## ▶️ How to Run
 
 ```bash
