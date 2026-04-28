@@ -88,10 +88,4 @@ python predict.py
 * Fitness tracking
 * Security systems
 
-## 👩‍💻 Authors
 
-* Your Name + Team Members
-
-## 📜 License
-
-MIT License
