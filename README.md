@@ -1,8 +1,6 @@
 # ⚡ Footstep Power Generation & Activity Detection using Piezo Sensors
 
-## 📌 Overview
-
-This project focuses on generating electrical energy using piezoelectric sensors and detecting human activities using Machine Learning.
+This project is based on generating electrical energy from mechanical pressure applied on piezoelectric discs. When a person steps on the surface, the applied force causes the piezo sensors to deform, producing electrical energy through the piezoelectric effect and in addition detecting human activities using Machine Learning.
 
 It converts mechanical energy (footsteps) into electrical signals and classifies activities like:
 
